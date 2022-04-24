@@ -1,0 +1,520 @@
+body{
+    font-family: Arial, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #344051;
+}
+.logo{
+    color: #fff;
+    font-size: 28px;
+    line-height: 60px;
+    padding-left: 280px;
+    float: left;
+        
+}
+.menu{
+    float: left;
+    padding-left: 280px;
+}
+.menu li{
+    float: left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 25px;
+    font-size: 12px;
+    text-transform: uppercase;
+    
+}
+.main{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/fon/ya.jpg) 90% 100%/auto 80% no-repeat , url(../img/fon/2022-04-21_20-30-52.png) center/cover no-repeat;
+    }
+.title__container{
+    float: left;
+    margin: 300px 0px 0px 300px;
+    color: #2c384a;
+    text-align: center;
+    
+}
+.title__container h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.title__container h4{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #79818d;
+}
+.title__container input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 16px;
+    padding: 10px 16px 10px 16px;
+    margin: 40px 12px 0px 12px;
+}
+.block2{
+    width: 100%;
+    height: 300px;
+    background: none;
+        
+}
+.block2 h2{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 60px;
+    font-weight: bold;
+    color: #263244;
+}
+.block2 div{
+   width: 70px;
+    height: 70px;
+    border-radius: 50% 50%;
+    background: url(../img/img%20ya.jpg) center/cover no-repeat;
+    margin: 60px 625px 30px 625px;
+}
+
+.block2 p{
+    width: 600px;
+     color: #525b69;
+    font-size: 13px;
+    text-align: center;
+    margin: 20px 350px;
+}
+.block2 input{
+      height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 16px;
+    margin: 20px 0px 20px 600px;
+    padding: 10px;
+}
+.umenia{
+     width: 100%;
+    height: 450px;
+    background: url(../img/fon/fon_umey.jpg) center no-repeat;
+}
+.umenia h2{
+    margin: 150px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #263244;
+    padding-top: 100px;
+    margin-bottom: 150px;
+    
+
+}
+.web{
+    width: 200px;
+    height: 150px;
+   
+    float: left;
+    margin: 0px 60px;
+}
+.web p1{
+    margin: 80px;
+}
+.web h4{
+     color: #d1873a;
+    font-size: 13px;
+    text-align: center;
+    margin: 20px;
+}
+.web p{
+    color: #757b86;
+    text-align: center;
+    font-size: 13px;
+}
+.razrabotka{
+    width: 200px;
+    height: 150px;
+   
+    float: left;
+    margin: 0px 60px;
+}
+.razrabotka p1{
+    margin: 80px;}
+
+.razrabotka h4{
+   color: #d1873a;
+    font-size: 13px;
+    text-align: center;
+    margin: 20px;
+}
+.razrabotka p{
+    color: #757b86;
+    text-align: center;
+    font-size: 13px;
+}
+.seo{
+     width: 200px;
+    height: 150px;
+    
+    float: left;
+    margin: 0px 60px;
+    
+}
+.seo p1{
+    margin: 80px;}
+
+.seo h4{
+color: #d1873a;
+    font-size: 13px;
+    text-align: center;
+    margin: 20px;
+}
+
+.seo p{
+    color: #757b86;
+    text-align: center;
+    font-size: 13px;
+}
+.marketing{
+     width: 200px;
+    height: 150px;
+   
+    float: left;
+    margin: 0px 60px;
+}
+.marketing p1{
+    margin: 80px;}
+.marketing h4{
+   color: #d1873a;
+    font-size: 13px;
+    text-align: center;
+    margin: 20px;
+}
+.marketing p{
+    color: #757b86;
+    text-align: center;
+    font-size: 13px;
+}
+.keysi{
+    width: 100%;
+    height: 100%;
+    background: none;
+    
+}
+.keysi h2{
+     margin: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #263244;
+}
+.keysi p{
+    
+    text-align: center;
+   
+    font-size: 13px;
+    color: #3f495a;
+}
+.keysi p1{
+    margin: 0px 300px;
+}
+.client{
+    float: left;
+    width: 400px;
+    height: 200px;
+   
+    margin: 0px 100px 0px 0px;
+}
+.client h3{
+    color: #384354;
+    font-weight: bold;
+    
+    font-size: 16px;
+    margin: 20px 300px 0px 300px;
+}
+.client span{
+    font-size: 12px;
+    margin: 20px 300px 0px 300px;
+}
+.client input{
+    border: 2px solid #91e3dc;
+    border-radius: 5px;
+    background-color: #91e3dc;
+    margin: 10px 300px 0px 300px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.Project_name{
+    
+    width: 1000px;
+    height: 200px;
+    margin: 18px 0px 0px 0px;
+}
+
+.Project_name p{
+    color: #747a85;
+    font-size: 13px;
+    text-align: left;
+    
+}
+.Project_name b{
+    font-size: 15px;
+    color: #000; 
+}
+.calk{
+    width: 100%;
+    height: 210px;
+    margin: 250px;
+}
+.calk h2{
+     color: #384354;
+    font-weight: bold;
+    
+    font-size: 20px;
+    margin: 20px 300px 50px 300px;
+}
+.calk h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 100px 20px 100px;
+}
+.calk select{
+    font-size: 16px;
+    margin-left: 100px;
+}
+.calk h4{
+    font-size: 16px;
+    margin: 50px 300px 20px 100px;
+    font-weight: bold;
+    word-spacing: 500px;
+    
+}
+.calk h5{
+    font-size: 16px;
+    margin: 0px 300px 20px 100px;
+    font-weight: bold;
+    word-spacing: 463px;
+}
+.stat{
+    width: 100%;
+    height: 280px;
+    background: url(../img/fon/fonstat.png) center/cover no-repeat;
+    
+}
+.stat h2{
+    color: #384354;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 60px;
+    margin-bottom: 40px;
+    
+}
+.klient{
+    width: 200px;
+    height: 150px;
+   
+    float: left;
+    margin: 0px 60px;
+}
+.klient p{
+    margin: 20px 0px 20px 80px;
+}
+.klient h3{
+     color: #000;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.klient span{
+    color: #000;
+    text-align: center;
+    font-size: 13px;
+    padding-left: 30px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.rabota{
+    width: 200px;
+    height: 150px;
+    
+    float: left;
+    margin: 0px 60px;
+}
+.rabota p{
+    margin: 20px 0px 20px 80px;}
+
+.rabota h3{
+   color: #000;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.rabota span{
+    color: #000;
+    text-align: center;
+    font-size: 13px;
+    padding-left: 50px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.zaversh{
+      width: 200px;
+    height: 150px;
+   
+    float: left;
+    margin: 0px 60px;
+    
+}
+.zaversh p{
+    margin: 20px 0px 20px 80px;}
+
+.zaversh h3{
+   color: #000;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.zaversh span{
+     color: #000;
+    text-align: center;
+    font-size: 13px;
+    padding-left: 30px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.kubok{
+     width: 200px;
+    height: 150px;
+    
+    float: left;
+    margin: 0px 60px;
+}
+.kubok p{
+    margin: 20px 0px 20px 80px;}
+.kubok h3{
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.kubok span{
+     color: #000;
+    text-align: center;
+    font-size: 13px;
+    padding-left: 30px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.otziv{
+    width: 100%;
+    height: 280px;
+    background: none;
+}
+.otziv h2{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 60px;
+    text-align: center;
+}
+.otziv p1{
+    margin: 20px 650px 20px 630px;
+     
+   
+}
+.otziv p{
+    font-size: 13px;
+    text-align: center;
+    margin: 20px;
+}
+.Kontakt{
+    width: 100%;
+    height: 500px;
+    background: url(../img/fon/fonkontakt.png) center/cover no-repeat;
+    color: #fff;
+}
+.Kontakt h2{
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    padding: 40px;
+}
+.Kontakt p{
+    font-size: 13px;
+    text-align: center;
+    
+}
+.spis p{
+    float: left;
+    margin-left: 200px;
+    color: #fff;
+    margin-top: 30px;
+}
+.spis a{
+    color: #fff;
+}
+.sms{
+    width: auto;
+    height: 200px;
+    clear: both;
+        
+}
+.sms h3{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+}
+.sms form{
+    width: 500px;
+    height: 150px;
+    padding: 32;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    margin-left: 510px;
+}
+.sms button{
+    
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 10px;
+    border-width: 30px;
+    box-shadow: 2px 2px 10px #eee;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+}
+.icon{
+    width: auto;
+    height: auto;
+    margin-left: 500px;
+    margin-top: 30px;
+
+}
+.icon a{
+    margin-left: 20px;
+}
+.kart{
+    width: auto;
+    height: 300px;
+}
+.copir{
+    width: 100%;
+    height: 30px;
+    background-color: #354051;
+}
+.copir h6{
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+    line-height: 30px;
+}
