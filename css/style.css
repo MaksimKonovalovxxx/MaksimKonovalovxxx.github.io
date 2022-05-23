@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'FranklinGot';
+    src: url('../FranklinGothic-Medium.eot');
+    src: url('FranklinGothic-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../FranklinGothic-Medium.woff2') format('woff2'),
+        url('../FranklinGothic-Medium.woff') format('woff'),
+        url('../FranklinGothic-Medium.ttf') format('truetype'),
+        url('../FranklinGothic-Medium.svg#FranklinGothic-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 
 body{
     
@@ -9,20 +21,22 @@ nav{
     height: 60px;
     background: #344051;
     position: fixed;
+    z-index: 3;
 }
 .logo{
     color: #fff;
-    font-size: 28px;
+    font-size: 18px;
     line-height: 60px;
-    padding-left: 280px;
+    
     float: left;
     animation: comming 2s;
+    font-family: 'FranklinGot', sans-serif;
     
         
 }
 .menu{
     float: left;
-    padding-left: 280px;
+    
 }
 .menu li{
     float: left;
@@ -33,6 +47,7 @@ nav{
     text-transform: uppercase;
     animation: topshift 2s forwards;
     opacity: 0;
+   
     
     
 }
@@ -41,12 +56,18 @@ nav{
     color: white;
     display: inline-block;
     transform: scale(1);
+     text-decoration: none;
         
 }
 .menu li a:visited{color: white;}
 .menu li a:hover{color: #e88604;
 transform: scale(1.1);}
 .menu li a:active{ transform: scale(0.9);}
+
+
+.white-btn:visited{
+    color: white;
+}
 
 
 .main{
@@ -56,19 +77,20 @@ transform: scale(1.1);}
     }
 .title__container{
     float: left;
-    margin: 300px 0px 0px 300px;
+    
     color: #2c384a;
     text-align: center;
     transition: all;
-    animation: title 2s forwards;
-    animation-delay: 2.4s;
-    opacity: 0;
+    /. animation: title 2s forwards;./
+    /. animation-delay: 2s;./
+   /.   opacity: 0;./
     
     
 }
 .title__container h1{
-    font-size: 40px;
-    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+   font-weight: bold;
 }
 .title__container h4{
     margin-top: 20px;
@@ -96,7 +118,7 @@ transform: scale(1.1);}
     transform: scale(0.8);
 }
 
-/.Анимация меню./
+
 
 @keyframes comming{
     from{ 
@@ -136,11 +158,11 @@ transform: scale(1.1);}
 @keyframes title{
     from{
         opacity: 0;
-        margin-left: -500px;
+        margin-left: 0px;
     }
     to{
         opacity: 1;
-        margin-left: 300px;
+        margin-left: 200px;
     }
 }
 
@@ -150,7 +172,7 @@ transform: scale(1.1);}
 
 .block2{
     width: 100%;
-    height: 300px;
+    height: 100%;
     background: none;
     transition: all;
         
@@ -158,11 +180,11 @@ transform: scale(1.1);}
 .block2 h2{
     font-size: 20px;
     text-align: center;
-    margin-top: 60px;
+    
     font-weight: bold;
     color: #263244;
     
-    animation: biogr 3s infinite ease-out;
+    /. animation: biogr 3s infinite ease-out; ./
 }
 
 @keyframes biogr{
@@ -176,54 +198,61 @@ transform: scale(1.1);}
         transform: rotate(-30deg);
     }
 }
-.block2 div{
-   width: 70px;
-    height: 70px;
-    border-radius: 50% 50%;
-    background: url(../img/img%20ya.jpg) center/cover no-repeat;
-    margin: 60px 625px 30px 625px;
+.foto{
+   width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+  
 }
 
-.block2 p{
+.Paragraf2{
     width: 600px;
-     color: #525b69;
+   align-content: center;
     font-size: 13px;
     text-align: center;
-    margin: 20px 350px;
+
+   
 }
-.block2 input{
+.btn-rezume{
       height: 40px;
     text-align: center;
     border: 2px solid #6d7682;
-    background: none;
+  margin-bottom: 60px;
     border-radius: 5px;
-    color: #6d7682;
+    
     font-size: 16px;
-    margin: 20px 0px 20px 600px;
-    padding: 10px;
+   
+    
     transform: scale(1);
 }
-.block2 input:active{
+.btn-rezume:active{
     transform: scale(0.8);
     
 }
-.block2 input:hover{
+.btn-rezume:hover{
     background: #344051;
     color: white;
 }
-.umenia{
+.btn-rezume input{
+    color: black;
+   
+}
+.container_umenia{
      width: 100%;
-    height: 450px;
-    background: url(../img/fon/fon_umey.jpg) center no-repeat;
+    height: 500px;
+    background: url(../img/fon/fon_umey.jpg) center/cover no-repeat;
     transition: all;
 }
+
 .umenia h2{
-    margin: 150px;
+    
+    
     text-align: center;
     font-weight: bold;
     font-size: 20px;
     color: #263244;
-    padding-top: 100px;
+    padding-top: 60px;
     margin-bottom: 150px;
     animation-name: rot;
     animation-duration: 3s;
@@ -244,23 +273,16 @@ transform: scale(1.1);}
 
 
 .web{
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
    
     float: left;
-    margin: 0px 60px;
-    animation: webb 3s linear infinite;
+    
+    
 }
-@keyframes webb{
-    0%{
-        margin-left: 80px;
-    }
-    50%{ margin-left: 90px}
-    100%{ margin-left: 80px;
-    }
-}
+
 .web p1{
-    margin: 80px;
+    margin: 42%;
 }
 .web h4{
      color: #d1873a;
@@ -274,14 +296,14 @@ transform: scale(1.1);}
     font-size: 13px;
 }
 .razrabotka{
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
    
     float: left;
-    margin: 0px 60px;
+    
 }
 .razrabotka p1{
-    margin: 80px;}
+    margin: 42%;}
 
 .razrabotka h4{
    color: #d1873a;
@@ -295,15 +317,14 @@ transform: scale(1.1);}
     font-size: 13px;
 }
 .seo{
-     width: 200px;
-    height: 150px;
+     width: 100%;
+    height: 100%;
     
     float: left;
-    margin: 0px 60px;
     
 }
 .seo p1{
-    margin: 80px;}
+    margin: 42%;}
 
 .seo h4{
 color: #d1873a;
@@ -318,17 +339,17 @@ color: #d1873a;
     font-size: 13px;
 }
 .marketing{
-     width: 200px;
-    height: 150px;
+     width: 100%;
+    height: 100%;
    
     float: left;
-    margin: 0px 60px;
+    
    
 }
 
 
 .marketing p1{
-    margin: 80px;}
+    margin: 42%;}
 .marketing h4{
    color: #d1873a;
     font-size: 13px;
@@ -345,12 +366,12 @@ color: #d1873a;
     height: 100%;
     background: none;
     transition: all;
-    
+    margin-top: 150px;
 }
 .keysi h2{
     display: inline-block;
-     margin: 70px;
-    margin-left: 600px;
+     
+   
     text-align: center;
     font-weight: bold;
     font-size: 20px;
@@ -373,41 +394,41 @@ color: #d1873a;
 .keysi p{
     
     text-align: center;
-   
+   margin-top: 5%;
+    
     font-size: 13px;
     color: #3f495a;
 }
 .keysi p1{
-    margin: 0px 300px;
-    transform: scale(1);
+   margin-left: 18%;
+    
 }
-.keysi p1: hover{
-    transform: scale(1.2);
-}
+    
+
 .client{
     float: left;
-    width: 400px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
    
-    margin: 0px 100px 0px 0px;
+    margin-left: 6%;
 }
 .client h3{
     color: #384354;
     font-weight: bold;
     
     font-size: 16px;
-    margin: 20px 300px 0px 300px;
+   
 }
 .client span{
     font-size: 12px;
-    margin: 20px 300px 0px 300px;
+    
 }
 .client input{
     border: 2px solid #91e3dc;
     border-radius: 5px;
     background-color: #91e3dc;
-    margin: 10px 300px 0px 300px;
-    padding: 10px 20px;
+   
+    padding: 2%;
     font-weight: bold;
     transform: scale(1);
 }
@@ -420,19 +441,21 @@ color: #d1873a;
     transform: scale(0.8);
 }
 .Project_name{
-    
-    width: 1000px;
-    height: 200px;
-    margin: 18px 0px 0px 0px;
+ 
+    width: 100%;
+    height: 100%;
+   
 }
 
 .Project_name p{
+    
     color: #747a85;
     font-size: 13px;
     text-align: left;
     
 }
 .Project_name b{
+     
     font-size: 15px;
     color: #000; 
     animation: name_proj 3s linear infinite;
@@ -449,18 +472,22 @@ color: #d1873a;
 
 
 .calk{
-    width: auto;
-    height: 210px;
-    margin-left: 250px;
-    margin-top: 250px;
-    margin-bottom: 250px;
+    width: 100%;
+    height: 100%;
+  margin-top: 250px;
+    
 }
 .calk h2{
      color: #384354;
     font-weight: bold;
     
-    font-size: 20px;
-    margin: 20px 300px 50px 300px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10%;
+    
+}
+.formaselekt{
+    box-shadow: -15px 0 10px 0 rgba(0,0,0,0.2);
 }
 .calk h3{
     font-size: 16px;
@@ -484,6 +511,15 @@ color: #d1873a;
     font-weight: bold;
     word-spacing: 463px;
 }
+.calk input{
+    border: 2px solid #91e3dc;
+    border-radius: 5px;
+    background-color: #91e3dc;
+   margin-left: 10%;
+    padding: 2%;
+    font-weight: bold;
+    
+}
 .stat{
     width: 100%;
     height: 280px;
@@ -495,25 +531,27 @@ color: #d1873a;
            
     
 }
+
  
 .stat h2{
     color: #384354;
     font-weight: bold;
     text-align: center;
-    font-size: 16px;
-    padding-top: 60px;
+    font-size: 22px;
+    padding-top: 70px;
     margin-bottom: 40px;
     
 }
 .klient{
-    width: 200px;
-    height: 150px;
-   
+    width: 100%;
+    height: 100%;
+ 
     float: left;
-    margin: 0px 60px;
+    
 }
 .klient p{
-    margin: 20px 0px 20px 80px;
+  margin-left:40%;
+    
 }
 .klient h3{
      color: #000;
@@ -526,19 +564,20 @@ color: #d1873a;
     color: #000;
     text-align: center;
     font-size: 13px;
-    padding-left: 30px;
+    display: inline-block;
     white-space: nowrap;
     text-transform: uppercase;
+    margin-left: 32%;
 }
 .rabota{
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     
     float: left;
-    margin: 0px 60px;
+   
 }
 .rabota p{
-    margin: 20px 0px 20px 80px;}
+    margin-left: 40%;}
 
 .rabota h3{
    color: #000;
@@ -551,20 +590,21 @@ color: #d1873a;
     color: #000;
     text-align: center;
     font-size: 13px;
-    padding-left: 50px;
+    display: inline-block;
     white-space: nowrap;
     text-transform: uppercase;
+    margin-left: 40%;
 }
 .zaversh{
-      width: 200px;
-    height: 150px;
+      width: 100%;
+    height: 100%;
    
     float: left;
-    margin: 0px 60px;
+  
     
 }
 .zaversh p{
-    margin: 20px 0px 20px 80px;}
+    margin-left: 40%;}
 
 .zaversh h3{
    color: #000;
@@ -578,19 +618,20 @@ color: #d1873a;
      color: #000;
     text-align: center;
     font-size: 13px;
-    padding-left: 30px;
+    display: inline-block;
     white-space: nowrap;
     text-transform: uppercase;
+    margin-left: 32%;
 }
 .kubok{
-     width: 200px;
-    height: 150px;
+     width: 100%;
+    height: 100%;
     
     float: left;
-    margin: 0px 60px;
+ 
 }
 .kubok p{
-    margin: 20px 0px 20px 80px;}
+    margin-left: 40%;}
 .kubok h3{
     color: #000;
     font-size: 20px;
@@ -602,34 +643,35 @@ color: #d1873a;
      color: #000;
     text-align: center;
     font-size: 13px;
-    padding-left: 30px;
+    display: inline-block;
     white-space: nowrap;
     text-transform: uppercase;
+    margin-left: 32%;
 }
 .otziv{
     width: 100%;
-    height: 280px;
+    height: 100%;
     background: none;
 }
 .otziv h2{
     font-size: 16px;
     font-weight: bold;
-    margin: 60px;
+    margin: 60px 0;
     text-align: center;
 }
 .otziv p1{
-    margin: 20px 650px 20px 630px;
+    margin: 0 25%;
      
    
 }
 .otziv p{
     font-size: 13px;
     text-align: center;
-    margin: 20px;
+    margin: 3%;
 }
 .Kontakt{
     width: 100%;
-    height: 500px;
+    height: 100%;
     background: url(../img/fon/fonkontakt.png) center/cover no-repeat;
     color: #fff;
 }
@@ -644,11 +686,13 @@ color: #d1873a;
     text-align: center;
     
 }
+
+
 .spis p{
     float: left;
-    margin-left: 200px;
+    
     color: #fff;
-    margin-top: 30px;
+  
 }
 .spis a{
     color: #fff;
@@ -673,8 +717,8 @@ color: #d1873a;
     }
 }
 .sms{
-    width: auto;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     clear: both;
         
 }
@@ -690,12 +734,12 @@ color: #d1873a;
     padding: 32;
     letter-spacing: 1px;
     opacity: 0.8;
-    margin-left: 510px;
+   
 }
 .sms button{
     
     text-align: center;
-    margin-left: 120px;
+    margin-left: 20%;
     margin-top: 10px;
     border-width: 30px;
     box-shadow: 2px 2px 10px #eee;
@@ -716,8 +760,9 @@ color: #d1873a;
 .icon{
     width: auto;
     height: auto;
-    margin-left: 500px;
-    margin-top: 30px;
+    
+    margin-top: 30%;
+    margin-bottom: 20%;
 
 }
 .icon a{
@@ -739,3 +784,43 @@ color: #d1873a;
     line-height: 30px;
 }
 
+.custom-css{
+    font-size: 25px;
+    margin: 5px;
+    animation: css 3s infinite;
+}
+@keyframes css{
+    0%{
+        transform: rotate(0deg) scale(0.8);
+        
+    }
+    50%{
+        transform: rotate(10deg) scale(1);
+        
+    }
+    100%{
+        transform: rotate(0deg) scale(1.2);
+    }
+   
+    @media (max-width: 900px){.title__container,.title__container h4, .title__container input{
+            color: white;
+        position: relative;
+        z-index: 2;
+        animation-delay: 0.4s;
+        }
+        .title__container input{
+            border: 2px solid #fff;
+        }
+        .main { position: relative;}
+        .main::after {
+            content: "";
+            bottom: 0;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background: rgba(0,0,0,0.4);
+                
+            
+        }
+    }
+ 
