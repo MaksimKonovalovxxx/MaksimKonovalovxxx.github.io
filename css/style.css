@@ -1,15 +1,4 @@
-@font-face {
-    font-family: 'FranklinGot';
-    src: url('../FranklinGothic-Medium.eot');
-    src: url('FranklinGothic-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../FranklinGothic-Medium.woff2') format('woff2'),
-        url('../FranklinGothic-Medium.woff') format('woff'),
-        url('../FranklinGothic-Medium.ttf') format('truetype'),
-        url('../FranklinGothic-Medium.svg#FranklinGothic-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+
 
 body{
     
@@ -801,9 +790,9 @@ color: #d1873a;
     100%{
         transform: rotate(0deg) scale(1.2);
     }
-   
+}
     @media (max-width: 900px){.title__container,.title__container h4, .title__container input{
-            color: white;
+            color: red;
         position: relative;
         z-index: 2;
         animation-delay: 0.4s;
