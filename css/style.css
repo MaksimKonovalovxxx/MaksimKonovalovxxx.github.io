@@ -191,12 +191,12 @@ transform: scale(1.1);}
    width: 100%;
     height: 100%;
     border-radius: 50%;
-
+margin-left: 7%;
   
 }
 
 .Paragraf2{
-    width: 600px;
+    width: 100%;
    align-content: center;
     font-size: 13px;
     text-align: center;
@@ -355,7 +355,7 @@ color: #d1873a;
     height: 100%;
     background: none;
     transition: all;
-    margin-top: 150px;
+    margin-top: 14%;
 }
 .keysi h2{
     display: inline-block;
@@ -388,9 +388,12 @@ color: #d1873a;
     font-size: 13px;
     color: #3f495a;
 }
-.keysi p1{
-   margin-left: 18%;
-    
+.fotofon{
+  
+    width: 700px;
+    height: 300px;
+    background: url(../img/keysfoto.jpg) center/cover no-repeat;
+            
 }
     
 
@@ -399,7 +402,7 @@ color: #d1873a;
     width: 100%;
     height: 100%;
    
-    margin-left: 6%;
+    margin-left: 0%;
 }
 .client h3{
     color: #384354;
@@ -431,7 +434,7 @@ color: #d1873a;
 }
 .Project_name{
  
-    width: 100%;
+    width: 90%;
     height: 100%;
    
 }
@@ -507,12 +510,12 @@ color: #d1873a;
    margin-left: 10%;
     padding: 2%;
     font-weight: bold;
-    
+     
 }
 .stat{
     width: 100%;
     height: 280px;
-    
+    margin-top: 10%;
   
     background: url(../img/fon/fonstat.png) center/cover no-repeat;
     
@@ -755,7 +758,7 @@ color: #d1873a;
 
 }
 .icon a{
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .kart{
     width: auto;
@@ -807,9 +810,12 @@ color: #d1873a;
             top: 0;
             left: 0;
             position: absolute;
-            background: rgba(0,0,0,0.4);
-                
-            
-        }
+            background: rgba(0,0,0,0.4);}
     }
  
+@media (max-width: 550px){
+    .fotofon{
+        margin-left: 5%;
+        
+    }
+}
