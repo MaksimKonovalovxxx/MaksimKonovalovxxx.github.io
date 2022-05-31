@@ -1,11 +1,15 @@
 "use strict"
 
-if (confirm ("Привет?")){
-    console.log("Приветики");}
+if (confirm ("Привет")){
+    console.log("Привет");}
 
 
-let age = prompt("Сколько тебе лет?", "5");
-console.log(age);
+let tip = prompt("Тип сайта? Введите свое значение:", "Для себя? Для Коммерции?");
+console.log(tip);
 
-let goi = prompt("Как тебя зовут?");
-console.log(goi);
+let dizain = prompt("Какой дизайн? Введите свое значение:", "Промышленный, Домашний, Офисный?");
+console.log(dizain);
+
+let adaptiv = prompt("Адаптивность? Введите свое значение:", "Смартфон, ПК, Планшет?");
+console.log(adaptiv);
+
