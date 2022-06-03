@@ -31,5 +31,7 @@ else if (adaptiv == "2"){adaptiv = price2}
 else if (adaptiv == "3"){adaptiv = price3}
 else{alert("Вы ввели что то не то")};
 
-let price = prompt (tip(true) + dizain(true) + adaptiv(true))
+let price = tip + dizain + adaptiv;
 console.log(price);
+
+
