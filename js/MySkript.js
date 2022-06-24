@@ -1,6 +1,6 @@
 "use strict"
 
-if (confirm ("Привет")){
+/*if (confirm ("Привет")){
     console.log("Привет");}
 
 let price1 = 5000;
@@ -34,4 +34,118 @@ else{alert("Вы ввели что то не то")};
 let price = tip + dizain + adaptiv;
 console.log(price);
 
+alert(price);*/
+   $(document).ready(function() {
+  $('.image-link').magnificPopup({type:'image'});
+
+
+/*$(window).scroll(()=>{
+    let scrollDistance = $(window).scrollTop();
+   $(".section").each((i, el)=>{
+       if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
+           $("nav a").each((i, el) => {
+               if($(el).hasClass("active")){
+                   $(el).removeClass("active");
+               }
+           });
+           
+           $('nav li:eq('+ i +')').find('a').addClass('active');
+       }
+   }); 
+});*/
+    
+    $('a[href^="#"]').click(function(){
+    let valHref = $(this).attr("href");
+    $("html, body").animate({scrollTop: $(valHref).offset().top - 50 + "px"});
+});
+
+setTimeout(function(){ 
+	$(".modalopen").click();
+}, 20000);
+
+$(function() {
+	
+		$({numberValue: 0}).animate({numberValue: 120}, {
+		
+			duration: 5000, // Продолжительность анимации, где 500 = 0,5 одной секунды, то есть 500 миллисекунд
+			easing: "linear",
+			
+			step: function(val) {
+			
+				$(".price").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
+				
+			}
+			
+		});
+		
+	});
+       
+       $(function() {
+	
+		$({numberValue: 0}).animate({numberValue: 4600}, {
+		
+			duration: 5000, // Продолжительность анимации, где 500 = 0,5 одной секунды, то есть 500 миллисекунд
+			easing: "linear",
+			
+			step: function(val) {
+			
+				$(".time").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
+				
+			}
+			
+		});
+		
+	});
+       
+       $(function() {
+	
+		$({numberValue: 0}).animate({numberValue: 340}, {
+		
+			duration: 5000, // Продолжительность анимации, где 500 = 0,5 одной секунды, то есть 500 миллисекунд
+			easing: "linear",
+			
+			step: function(val) {
+			
+				$(".proj").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
+				
+			}
+			
+		});
+		
+	});
+       
+       $(function() {
+	
+		$({numberValue: 0}).animate({numberValue: 23}, {
+		
+			duration: 5000, 
+			easing: "linear",
+			
+			step: function(val) {
+			
+				$(".nagrada").html(Math.ceil(val)); 
+				
+			}
+			
+		});
+		
+	});
+       });
+
+    /* let options = {threshold:[0.8]};
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = $('.price, .time, .proj, .nagrada');
+    elements.each((i,el) =>{
+        observer.observe(el);
+    });
+    
+    
+    function onEntry(entry){
+    entry.forEach(change =>{
+        if(change.isIntersecting){
+            change.target.classList.add('show-animation');
+          
+        }
+       
+        }*/
 
